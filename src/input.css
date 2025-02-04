@@ -58,10 +58,11 @@
 	.dashboard___search_bar::after {
 		content: "";
 		position: absolute;
-		background: var(--text-grey-2);
-		height: 2px;
-		width: 50%;
-		left: 50%;
+		background: var(--text-grey-1);
+		height: 1px;
+		width: 100%;
+		left: 0%;
+		bottom: 10%;
 	}
 	.weather__updates {
 		@apply text-[var(--primary-color-light)];
@@ -85,10 +86,10 @@
 	.weather__status::after {
 		content: "";
 		position: absolute;
-		height: 2px;
-		background: var(--primary-color-light);
-		width: 75%;
-		left: 15%;
+		height: 1px;
+		background: var(--text-grey-1);
+		width: 90%;
+		left: 5%;
 	}
 	.swiper-slide {
 		width: 20%;

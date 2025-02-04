@@ -52,7 +52,9 @@
 						<h1
 							class="weather__temperature text-7xl mb-5 text-[var(--primary-color-light)] font-extrabold"
 						>
-							<i class="fad fa-sun text-yellow-500"></i> 8.3°C
+							<i class="fad fa-sun text-yellow-500"></i> 8.3<sup
+								>°C</sup
+							>
 						</h1>
 						<p
 							class="weather__state text-4xl text-white tracking-wide uppercase font-bold"
@@ -65,7 +67,7 @@
 					>
 						<p class="weather__max__min">2.5° / 4.5°</p>
 						<p class="rain__chance">Rain 81%</p>
-						<p class="feels__like">Feels like 6°C</p>
+						<p class="feels__like">Feels like 6<sup>°C</sup></p>
 					</div>
 				</div>
 
@@ -79,9 +81,9 @@
 									class="weather__updates text-2xl leading-[3.5rem px-8 py-4"
 								>
 									<p class="hour mb-6">15:00</p>
-									<i class="fad fa-sun text-6xl mb-3"></i>
+									<i class="fad fa-sun text-6xl mb-4"></i>
 									<p class="weather__temp text-4xl mb-3">
-										8.3°C
+										8.3<sup>°C</sup>
 									</p>
 									<p
 										class="weather__rain text-[var(--text-grey-1)] mb-3"
@@ -95,9 +97,9 @@
 									class="weather__updates text-2xl leading-[3.5rem px-8 py-4"
 								>
 									<p class="hour mb-6">15:00</p>
-									<i class="fad fa-sun text-6xl mb-3"></i>
+									<i class="fad fa-sun text-6xl mb-4"></i>
 									<p class="weather__temp text-4xl mb-3">
-										8.3°C
+										8.3<sup>°C</sup>
 									</p>
 									<p
 										class="weather__rain text-[var(--text-grey-1)] mb-3"
@@ -111,9 +113,9 @@
 									class="weather__updates text-2xl leading-[3.5rem px-8 py-4"
 								>
 									<p class="hour mb-6">15:00</p>
-									<i class="fad fa-sun text-6xl mb-3"></i>
+									<i class="fad fa-sun text-6xl mb-4"></i>
 									<p class="weather__temp text-4xl mb-3">
-										8.3°C
+										8.3<sup>°C</sup>
 									</p>
 									<p
 										class="weather__rain text-[var(--text-grey-1)] mb-3"
@@ -127,9 +129,9 @@
 									class="weather__updates text-2xl leading-[3.5rem px-8 py-4"
 								>
 									<p class="hour mb-6">15:00</p>
-									<i class="fad fa-sun text-6xl mb-3"></i>
+									<i class="fad fa-sun text-6xl mb-4"></i>
 									<p class="weather__temp text-4xl mb-3">
-										8.3°C
+										8.3<sup>°C</sup>
 									</p>
 									<p
 										class="weather__rain text-[var(--text-grey-1)] mb-3"
@@ -143,9 +145,9 @@
 									class="weather__updates text-2xl leading-[3.5rem px-8 py-4"
 								>
 									<p class="hour mb-6">15:00</p>
-									<i class="fad fa-sun text-6xl mb-3"></i>
+									<i class="fad fa-sun text-6xl mb-4"></i>
 									<p class="weather__temp text-4xl mb-3">
-										8.3°C
+										8.3<sup>°C</sup>
 									</p>
 									<p
 										class="weather__rain text-[var(--text-grey-1)] mb-3"
@@ -159,9 +161,9 @@
 									class="weather__updates text-2xl leading-[3.5rem px-8 py-4"
 								>
 									<p class="hour mb-6">15:00</p>
-									<i class="fad fa-sun text-6xl mb-3"></i>
+									<i class="fad fa-sun text-6xl mb-4"></i>
 									<p class="weather__temp text-4xl mb-3">
-										8.3°C
+										8.3<sup>°C</sup>
 									</p>
 									<p
 										class="weather__rain text-[var(--text-grey-1)] mb-3"
@@ -175,9 +177,9 @@
 									class="weather__updates text-2xl leading-[3.5rem px-8 py-4"
 								>
 									<p class="hour mb-6">15:00</p>
-									<i class="fad fa-sun text-6xl mb-3"></i>
+									<i class="fad fa-sun text-6xl mb-4"></i>
 									<p class="weather__temp text-4xl mb-3">
-										8.3°C
+										8.3<sup>°C</sup>
 									</p>
 									<p
 										class="weather__rain text-[var(--text-grey-1)] mb-3"
@@ -192,9 +194,9 @@
 									class="weather__updates text-2xl leading-[3.5rem px-8 py-4"
 								>
 									<p class="hour mb-6">15:00</p>
-									<i class="fad fa-sun text-6xl mb-3"></i>
+									<i class="fad fa-sun text-6xl mb-4"></i>
 									<p class="weather__temp text-4xl mb-3">
-										8.3°C
+										8.3<sup>°C</sup>
 									</p>
 									<p
 										class="weather__rain text-[var(--text-grey-1)] mb-3"
@@ -208,9 +210,9 @@
 									class="weather__updates text-2xl leading-[3.5rem px-8 py-4"
 								>
 									<p class="hour mb-6">15:00</p>
-									<i class="fad fa-sun text-6xl mb-3"></i>
+									<i class="fad fa-sun text-6xl mb-4"></i>
 									<p class="weather__temp text-4xl mb-3">
-										8.3°C
+										8.3<sup>°C</sup>
 									</p>
 									<p
 										class="weather__rain text-[var(--text-grey-1)] mb-3"
@@ -286,66 +288,344 @@
 					</div>
 				</div>
 
-				<div class="starred__location">
-					<header class="starred__location__header text-4xl font-extrabold">
-						<h4>Starred Location</h4>
+				<div class="starred__location pt-14 pb-16">
+					<header
+						class="starred__location__header text-4xl font-extrabold"
+					>
+						<h4 class="mb-14">Starred Location</h4>
 					</header>
 
-					<div class="location">
-						<div class="location__header">
-							<p class="country">Bucharest, Romania</p>
-						</div>
-						<div class="location__info">
-							<div class="left">
-								<i class="fad fa-clouds"></i>
-								<p class="location__temp">22°C</p>
+					<div
+						class="starred__location__info flex gap-36 items-center justify-center"
+					>
+						<div class="swiper mySwiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div
+										class="location bg-white px-16 py-10 rounded-xl"
+									>
+										<div
+											class="location__header mb-11 text-center text-3xl text-[var(--primary-color)] font-extrabold uppercase tracking-wider"
+										>
+											<p class="country">
+												Bucharest, Romania
+											</p>
+										</div>
+										<div
+											class="location__info flex items-center justify-between"
+										>
+											<div
+												class="left flex items-center gap-3 text-5xl"
+											>
+												<i
+													class="fad fa-clouds text-[var(--primary-color)]"
+												></i>
+												<p
+													class="location__temp text-black"
+												>
+													22<sup>°C</sup>
+												</p>
+											</div>
+											<div class="right">
+												<p
+													class="weather__type text-2xl tracking-wider uppercase text-[var(--text-grey-1)]"
+												>
+													Cloudy
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div
+										class="location bg-white px-16 py-10 rounded-xl"
+									>
+										<div
+											class="location__header mb-11 text-center text-3xl text-[var(--primary-color)] font-extrabold uppercase tracking-wider"
+										>
+											<p class="country">
+												Bucharest, Romania
+											</p>
+										</div>
+										<div
+											class="location__info flex items-center justify-between"
+										>
+											<div
+												class="left flex items-center gap-3 text-5xl"
+											>
+												<i
+													class="fad fa-clouds text-[var(--primary-color)]"
+												></i>
+												<p
+													class="location__temp text-black"
+												>
+													22<sup>°C</sup>
+												</p>
+											</div>
+											<div class="right">
+												<p
+													class="weather__type text-2xl tracking-wider uppercase text-[var(--text-grey-1)]"
+												>
+													Cloudy
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div
+										class="location bg-white px-16 py-10 rounded-xl"
+									>
+										<div
+											class="location__header mb-11 text-center text-3xl text-[var(--primary-color)] font-extrabold uppercase tracking-wider"
+										>
+											<p class="country">
+												Bucharest, Romania
+											</p>
+										</div>
+										<div
+											class="location__info flex items-center justify-between"
+										>
+											<div
+												class="left flex items-center gap-3 text-5xl"
+											>
+												<i
+													class="fad fa-clouds text-[var(--primary-color)]"
+												></i>
+												<p
+													class="location__temp text-black"
+												>
+													22<sup>°C</sup>
+												</p>
+											</div>
+											<div class="right">
+												<p
+													class="weather__type text-2xl tracking-wider uppercase text-[var(--text-grey-1)]"
+												>
+													Cloudy
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div
+										class="location bg-white px-16 py-10 rounded-xl"
+									>
+										<div
+											class="location__header mb-11 text-center text-3xl text-[var(--primary-color)] font-extrabold uppercase tracking-wider"
+										>
+											<p class="country">
+												Bucharest, Romania
+											</p>
+										</div>
+										<div
+											class="location__info flex items-center justify-between"
+										>
+											<div
+												class="left flex items-center gap-3 text-5xl"
+											>
+												<i
+													class="fad fa-clouds text-[var(--primary-color)]"
+												></i>
+												<p
+													class="location__temp text-black"
+												>
+													22<sup>°C</sup>
+												</p>
+											</div>
+											<div class="right">
+												<p
+													class="weather__type text-2xl tracking-wider uppercase text-[var(--text-grey-1)]"
+												>
+													Cloudy
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div
+										class="location bg-white px-16 py-10 rounded-xl"
+									>
+										<div
+											class="location__header mb-11 text-center text-3xl text-[var(--primary-color)] font-extrabold uppercase tracking-wider"
+										>
+											<p class="country">
+												Bucharest, Romania
+											</p>
+										</div>
+										<div
+											class="location__info flex items-center justify-between"
+										>
+											<div
+												class="left flex items-center gap-3 text-5xl"
+											>
+												<i
+													class="fad fa-clouds text-[var(--primary-color)]"
+												></i>
+												<p
+													class="location__temp text-black"
+												>
+													22<sup>°C</sup>
+												</p>
+											</div>
+											<div class="right">
+												<p
+													class="weather__type text-2xl tracking-wider uppercase text-[var(--text-grey-1)]"
+												>
+													Cloudy
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div
+										class="location bg-white px-16 py-10 rounded-xl"
+									>
+										<div
+											class="location__header mb-11 text-center text-3xl text-[var(--primary-color)] font-extrabold uppercase tracking-wider"
+										>
+											<p class="country">
+												Bucharest, Romania
+											</p>
+										</div>
+										<div
+											class="location__info flex items-center justify-between"
+										>
+											<div
+												class="left flex items-center gap-3 text-5xl"
+											>
+												<i
+													class="fad fa-clouds text-[var(--primary-color)]"
+												></i>
+												<p
+													class="location__temp text-black"
+												>
+													22<sup>°C</sup>
+												</p>
+											</div>
+											<div class="right">
+												<p
+													class="weather__type text-2xl tracking-wider uppercase text-[var(--text-grey-1)]"
+												>
+													Cloudy
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div
+										class="location bg-white px-16 py-10 rounded-xl"
+									>
+										<div
+											class="location__header mb-11 text-center text-3xl text-[var(--primary-color)] font-extrabold uppercase tracking-wider"
+										>
+											<p class="country">
+												Bucharest, Romania
+											</p>
+										</div>
+										<div
+											class="location__info flex items-center justify-between"
+										>
+											<div
+												class="left flex items-center gap-3 text-5xl"
+											>
+												<i
+													class="fad fa-clouds text-[var(--primary-color)]"
+												></i>
+												<p
+													class="location__temp text-black"
+												>
+													22<sup>°C</sup>
+												</p>
+											</div>
+											<div class="right">
+												<p
+													class="weather__type text-2xl tracking-wider uppercase text-[var(--text-grey-1)]"
+												>
+													Cloudy
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="right">
-								<p class="weather__type">Cloudy</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="location">
-						<div class="location__header">
-							<p class="country">Bucharest, Romania</p>
-						</div>
-						<div class="location__info">
-							<div class="left">
-								<i class="fad fa-clouds"></i>
-								<p class="location__temp">22°C</p>
-							</div>
-							<div class="right">
-								<p class="weather__type">Cloudy</p>
-							</div>
+							<div class="swiper-pagination"></div>
 						</div>
 					</div>
 				</div>
 
 				<div class="forecast__section">
-					<header class="forecast__section__header">
-						<h4>3-Day Forecast</h4>
+					<header
+						class="forecast__section__header text-4xl font-extrabold"
+					>
+						<h4 class="mb-14">3-day Forecast</h4>
 					</header>
 
-					<div class="forecast__block">
-						<p class="day">Thursday</p>
-						<i class="fad fa-cloud-sun-rain"></i>
-						<p class="weather__max__min">2° / 8°</p>
-						<i class="fad fa-raindrops"></i> 0%
-					</div>
+					<div
+						class="forecast__block__info flex items-center justify-around text-center"
+					>
+						<div
+							class="forecast__block bg-white px-24 py-10 rounded-xl"
+						>
+							<p
+								class="day text-[var(--primary-color)] tracking-wider font-extrabold text-4xl mb-6"
+							>
+								Thursday
+							</p>
+							<i
+								class="fad fa-cloud-sun-rain text-8xl mb-6 text-[var(--primary-color)]"
+							></i>
+							<p class="weather__max__min text-4xl mb-3">
+								2° / 8°
+							</p>
+							<p class="text-3xl mb-3 text-[var(--text-grey-1)]">
+								<i class="fad fa-raindrops"></i>
+								0%
+							</p>
+						</div>
 
-					<div class="forecast__block">
-						<p class="day">Thursday</p>
-						<i class="fad fa-cloud-sun-rain"></i>
-						<p class="weather__max__min">2° / 8°</p>
-						<i class="fad fa-raindrops"></i> 0%
-					</div>
-
-					<div class="forecast__block">
-						<p class="day">Thursday</p>
-						<i class="fad fa-cloud-sun-rain"></i>
-						<p class="weather__max__min">2° / 8°</p>
-						<i class="fad fa-raindrops"></i> 0%
+						<div
+							class="forecast__block bg-white px-24 py-10 rounded-xl"
+						>
+							<p
+								class="day text-[var(--primary-color)] tracking-wider font-extrabold text-4xl mb-6"
+							>
+								Thursday
+							</p>
+							<i
+								class="fad fa-cloud-sun-rain text-8xl mb-6 text-[var(--primary-color)]"
+							></i>
+							<p class="weather__max__min text-4xl mb-3">
+								2° / 8°
+							</p>
+							<p class="text-3xl mb-3 text-[var(--text-grey-1)]">
+								<i class="fad fa-raindrops"></i>
+								0%
+							</p>
+						</div>
+						<div
+							class="forecast__block bg-white px-24 py-10 rounded-xl"
+						>
+							<p
+								class="day text-[var(--primary-color)] tracking-wider font-extrabold text-4xl mb-6"
+							>
+								Thursday
+							</p>
+							<i
+								class="fad fa-cloud-sun-rain text-8xl mb-6 text-[var(--primary-color)]"
+							></i>
+							<p class="weather__max__min text-4xl mb-3">
+								2° / 8°
+							</p>
+							<p class="text-3xl mb-3 text-[var(--text-grey-1)]">
+								<i class="fad fa-raindrops"></i>
+								0%
+							</p>
+						</div>
 					</div>
 				</div>
 			</main>
