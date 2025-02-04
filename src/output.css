@@ -588,10 +588,129 @@ video {
   }
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: var(--primary-font-family);
   font-weight: var(--primary-font-weight);
-  font-size: var(--primary-font-size);
+}
+
+.side__bar {
+  background-image: url("../Image/bg-1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  z-index: -10;
+  height: 100%;
+  width: 100%;
+  background-image: var(--mask-color);
+}
+
+.weather__max__min,
+	.rain__chance,
+	.feels__like {
+  font-weight: 700;
+  letter-spacing: 0.025em;
+}
+
+.dashboard___search_bar {
+  position: relative;
+}
+
+.dashboard___search_bar::after {
+  content: "";
+  position: absolute;
+  background: var(--text-grey-2);
+  height: 2px;
+  width: 50%;
+  left: 50%;
+}
+
+.weather__updates {
+  color: var(--primary-color-light);
+}
+
+.fa-sun {
+  --tw-text-opacity: 1;
+  color: rgb(234 179 8 / var(--tw-text-opacity, 1));
+}
+
+.header .right {
+  transition: all 0.5s linear;
+}
+
+.header .right:hover {
+  color: #fff;
+}
+
+.weather__rain .fa-raindrops {
+  --tw-text-opacity: 1;
+  color: rgb(96 165 250 / var(--tw-text-opacity, 1));
+}
+
+.weather__updates,
+	.sun__time__info {
+  border-radius: 0.75rem;
+  background-color: var(--box-color);
+}
+
+.weather__status::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background: var(--primary-color-light);
+  width: 75%;
+  left: 15%;
+}
+
+.swiper-slide {
+  width: 20%;
+}
+
+.swiper-pagination {
+  bottom: 0 !important;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.left-4 {
+  left: 1rem;
+}
+
+.top-4 {
+  top: 1rem;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .flex {
@@ -602,16 +721,127 @@ body {
   display: grid;
 }
 
-.flex-shrink {
-  flex-shrink: 1;
+.min-h-screen {
+  min-height: 100vh;
 }
 
-.flex-grow {
-  flex-grow: 1;
+.max-w-full {
+  max-width: 100%;
 }
 
-.flex-wrap {
-  flex-wrap: wrap;
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.grid-cols-\[50rem\2c auto\] {
+  grid-template-columns: 50rem auto;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-14 {
+  gap: 3.5rem;
+}
+
+.gap-16 {
+  gap: 4rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-none {
+  border-style: none;
+}
+
+.bg-\[var\(--background-color\)\] {
+  background-color: var(--background-color);
+}
+
+.p-10 {
+  padding: 2.5rem;
+}
+
+.p-14 {
+  padding: 3.5rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.pl-16 {
+  padding-left: 4rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-3xl {
@@ -619,16 +849,76 @@ body {
   line-height: 2.25rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
 .font-bold {
   font-weight: 700;
 }
 
-.underline {
-  text-decoration-line: underline;
+.font-extrabold {
+  font-weight: 800;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.leading-10 {
+  line-height: 2.5rem;
+}
+
+.leading-6 {
+  line-height: 1.5rem;
+}
+
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+
+.text-\[var\(--primary-color-light\)\] {
+  color: var(--primary-color-light);
+}
+
+.text-\[var\(--text-grey-1\)\] {
+  color: var(--text-grey-1);
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-yellow-500 {
+  --tw-text-opacity: 1;
+  color: rgb(234 179 8 / var(--tw-text-opacity, 1));
+}
+
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 :root {
   --primary-color: #339af0;
+  --box-color: #2b4879;
   --primary-color-light: #c4e2fe;
   --background-color: #edf4fa;
   --mask-color: linear-gradient(160deg, #223956c6 50%, #183a7e);

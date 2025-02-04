@@ -9,14 +9,368 @@
 			href="./Image/cloud.png"
 			type="image/x-icon"
 		/>
-		<link rel="stylesheet" href="./src/output.css" />
 		<link
 			href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700"
 			rel="stylesheet"
 		/>
+		<link rel="stylesheet" href="./font-awesome-pro-5/css/all.min.css" />
+		<link
+			rel="stylesheet"
+			href="./node_modules/swiper/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="./src/output.css" />
 		<!-- <script defer type="module" src="./controller.js"></script> -->
 	</head>
 	<body>
-		<h1 class="text-3xl font-bold underline">Hello world!</h1>
+		<section
+			class="container max-w-full grid grid-cols-[50rem,auto] min-h-screen"
+		>
+			<aside class="side__bar flex flex-col relative z-50">
+				<div class="overlay"></div>
+				<div
+					class="header leading-6 flex items-center justify-center gap-14 py-14"
+				>
+					<div class="left">
+						<h4
+							class="location__info text-[var(--primary-color-light)] text-4xl mb-3"
+						>
+							<span class="city">Calverton</span>,
+							<span class="country"
+								>United States of America</span
+							>
+						</h4>
+						<p class="local__time text-3xl text-white">15:10</p>
+					</div>
+					<div
+						class="right text-5xl text-[var(--primary-color-light)] cursor-pointer"
+					>
+						<i class="fas fa-star"></i>
+					</div>
+				</div>
+				<div class="weather__status relative pb-10">
+					<div class="top text-center">
+						<h1
+							class="weather__temperature text-7xl mb-5 text-[var(--primary-color-light)] font-extrabold"
+						>
+							<i class="fad fa-sun text-yellow-500"></i> 8.3°C
+						</h1>
+						<p
+							class="weather__state text-4xl text-white tracking-wide uppercase font-bold"
+						>
+							Sunny
+						</p>
+					</div>
+					<div
+						class="bottom text-2xl text-end leading-10 text-[var(--text-grey-1)] px-8 py-6"
+					>
+						<p class="weather__max__min">2.5° / 4.5°</p>
+						<p class="rain__chance">Rain 81%</p>
+						<p class="feels__like">Feels like 6°C</p>
+					</div>
+				</div>
+
+				<div
+					class="weather__hourly__updates flex items-center justify-center pb-10 gap-16 text-center"
+				>
+					<div class="swiper mySwiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div
+									class="weather__updates text-2xl leading-[3.5rem px-8 py-4"
+								>
+									<p class="hour mb-6">15:00</p>
+									<i class="fad fa-sun text-6xl mb-3"></i>
+									<p class="weather__temp text-4xl mb-3">
+										8.3°C
+									</p>
+									<p
+										class="weather__rain text-[var(--text-grey-1)] mb-3"
+									>
+										<i class="fad fa-raindrops"></i> 0%
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div
+									class="weather__updates text-2xl leading-[3.5rem px-8 py-4"
+								>
+									<p class="hour mb-6">15:00</p>
+									<i class="fad fa-sun text-6xl mb-3"></i>
+									<p class="weather__temp text-4xl mb-3">
+										8.3°C
+									</p>
+									<p
+										class="weather__rain text-[var(--text-grey-1)] mb-3"
+									>
+										<i class="fad fa-raindrops"></i> 0%
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div
+									class="weather__updates text-2xl leading-[3.5rem px-8 py-4"
+								>
+									<p class="hour mb-6">15:00</p>
+									<i class="fad fa-sun text-6xl mb-3"></i>
+									<p class="weather__temp text-4xl mb-3">
+										8.3°C
+									</p>
+									<p
+										class="weather__rain text-[var(--text-grey-1)] mb-3"
+									>
+										<i class="fad fa-raindrops"></i> 0%
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div
+									class="weather__updates text-2xl leading-[3.5rem px-8 py-4"
+								>
+									<p class="hour mb-6">15:00</p>
+									<i class="fad fa-sun text-6xl mb-3"></i>
+									<p class="weather__temp text-4xl mb-3">
+										8.3°C
+									</p>
+									<p
+										class="weather__rain text-[var(--text-grey-1)] mb-3"
+									>
+										<i class="fad fa-raindrops"></i> 0%
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div
+									class="weather__updates text-2xl leading-[3.5rem px-8 py-4"
+								>
+									<p class="hour mb-6">15:00</p>
+									<i class="fad fa-sun text-6xl mb-3"></i>
+									<p class="weather__temp text-4xl mb-3">
+										8.3°C
+									</p>
+									<p
+										class="weather__rain text-[var(--text-grey-1)] mb-3"
+									>
+										<i class="fad fa-raindrops"></i> 0%
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div
+									class="weather__updates text-2xl leading-[3.5rem px-8 py-4"
+								>
+									<p class="hour mb-6">15:00</p>
+									<i class="fad fa-sun text-6xl mb-3"></i>
+									<p class="weather__temp text-4xl mb-3">
+										8.3°C
+									</p>
+									<p
+										class="weather__rain text-[var(--text-grey-1)] mb-3"
+									>
+										<i class="fad fa-raindrops"></i> 0%
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div
+									class="weather__updates text-2xl leading-[3.5rem px-8 py-4"
+								>
+									<p class="hour mb-6">15:00</p>
+									<i class="fad fa-sun text-6xl mb-3"></i>
+									<p class="weather__temp text-4xl mb-3">
+										8.3°C
+									</p>
+									<p
+										class="weather__rain text-[var(--text-grey-1)] mb-3"
+									>
+										<i class="fad fa-raindrops"></i> 0%
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div
+									class="weather__updates text-2xl leading-[3.5rem px-8 py-4"
+								>
+									<p class="hour mb-6">15:00</p>
+									<i class="fad fa-sun text-6xl mb-3"></i>
+									<p class="weather__temp text-4xl mb-3">
+										8.3°C
+									</p>
+									<p
+										class="weather__rain text-[var(--text-grey-1)] mb-3"
+									>
+										<i class="fad fa-raindrops"></i> 0%
+									</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div
+									class="weather__updates text-2xl leading-[3.5rem px-8 py-4"
+								>
+									<p class="hour mb-6">15:00</p>
+									<i class="fad fa-sun text-6xl mb-3"></i>
+									<p class="weather__temp text-4xl mb-3">
+										8.3°C
+									</p>
+									<p
+										class="weather__rain text-[var(--text-grey-1)] mb-3"
+									>
+										<i class="fad fa-raindrops"></i> 0%
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+
+				<div
+					class="weather__sun__time flex items-center justify-center gap-16 text-center py-10"
+				>
+					<div
+						class="sun__time__info sun__rise text-4xl text-white flex items-center justify-center gap-16 p-10"
+					>
+						<div class="icon text-6xl">
+							<i class="fad fa-sunrise"></i>
+						</div>
+						<div class="info">
+							<p class="mb-4 text-[var(--primary-color-light)]">
+								Sunrise
+							</p>
+							<p class="sun__rise__time">07:14</p>
+						</div>
+					</div>
+					<div
+						class="sun__time__info sun__set text-4xl text-white flex items-center justify-center gap-16 p-10"
+					>
+						<div class="icon text-6xl">
+							<i class="fad fa-sunset"></i>
+						</div>
+						<div class="info">
+							<p class="mb-4 text-[var(--primary-color-light)]">
+								Sunset
+							</p>
+							<p class="sun__set__time">07:14</p>
+						</div>
+					</div>
+				</div>
+			</aside>
+			<main class="main__app bg-[var(--background-color)] p-14">
+				<div
+					class="dashboard___search_bar flex items-start justify-between pb-10"
+				>
+					<div class="dashboard__info tracking-wide">
+						<h4 class="text-4xl font-extrabold mb-3">
+							Your Dashboard
+						</h4>
+						<h6
+							class="current__time text-2xl text-[var(--text-grey-1)] font-bold"
+						>
+							Friday, Jan 31, 2025
+						</h6>
+					</div>
+					<div class="location__search relative">
+						<button
+							class="text-4xl text-[var(--text-grey-1)] absolute left-4 top-4"
+							type="submit"
+						>
+							<i class="fad fa-search"></i>
+						</button>
+						<input
+							class="border pl-16 pr-4 py-5 text-2xl outline-none border-none rounded-xl"
+							type="search"
+							name="search"
+							id="search"
+							placeholder="Search location here"
+						/>
+					</div>
+				</div>
+
+				<div class="starred__location">
+					<header class="starred__location__header text-4xl font-extrabold">
+						<h4>Starred Location</h4>
+					</header>
+
+					<div class="location">
+						<div class="location__header">
+							<p class="country">Bucharest, Romania</p>
+						</div>
+						<div class="location__info">
+							<div class="left">
+								<i class="fad fa-clouds"></i>
+								<p class="location__temp">22°C</p>
+							</div>
+							<div class="right">
+								<p class="weather__type">Cloudy</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="location">
+						<div class="location__header">
+							<p class="country">Bucharest, Romania</p>
+						</div>
+						<div class="location__info">
+							<div class="left">
+								<i class="fad fa-clouds"></i>
+								<p class="location__temp">22°C</p>
+							</div>
+							<div class="right">
+								<p class="weather__type">Cloudy</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="forecast__section">
+					<header class="forecast__section__header">
+						<h4>3-Day Forecast</h4>
+					</header>
+
+					<div class="forecast__block">
+						<p class="day">Thursday</p>
+						<i class="fad fa-cloud-sun-rain"></i>
+						<p class="weather__max__min">2° / 8°</p>
+						<i class="fad fa-raindrops"></i> 0%
+					</div>
+
+					<div class="forecast__block">
+						<p class="day">Thursday</p>
+						<i class="fad fa-cloud-sun-rain"></i>
+						<p class="weather__max__min">2° / 8°</p>
+						<i class="fad fa-raindrops"></i> 0%
+					</div>
+
+					<div class="forecast__block">
+						<p class="day">Thursday</p>
+						<i class="fad fa-cloud-sun-rain"></i>
+						<p class="weather__max__min">2° / 8°</p>
+						<i class="fad fa-raindrops"></i> 0%
+					</div>
+				</div>
+			</main>
+		</section>
+		<script src="./font-awesome-pro-5/js/pro.min.js"></script>
+		<script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+		<script>
+			var swiper = new Swiper(".mySwiper", {
+				slidesPerView: "auto",
+				loop: true,
+				centeredSlides: true,
+				spaceBetween: 30,
+				grabCursor: true,
+				autoplay: {
+					delay: 2500,
+					disableOnInteraction: false,
+				},
+				keyboard: {
+					enabled: true,
+				},
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+			});
+		</script>
 	</body>
 </html>

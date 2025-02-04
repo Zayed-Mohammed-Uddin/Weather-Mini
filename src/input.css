@@ -4,6 +4,7 @@
 
 :root {
 	--primary-color: #339af0;
+	--box-color: #2b4879;
 	--primary-color-light: #c4e2fe;
 	--background-color: #edf4fa;
 	--mask-color: linear-gradient(160deg, #223956c6 50%, #183a7e);
@@ -29,9 +30,70 @@
 }
 
 @layer components {
+	html {
+		font-size: 62.5%;
+	}
 	body {
 		font-family: var(--primary-font-family);
 		font-weight: var(--primary-font-weight);
-		font-size: var(--primary-font-size);
+	}
+	.side__bar {
+		background-image: url("../Image/bg-1.jpg");
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.overlay {
+		@apply absolute w-full h-full -z-10;
+		background-image: var(--mask-color);
+	}
+	.weather__max__min,
+	.rain__chance,
+	.feels__like {
+		@apply font-bold tracking-wide;
+	}
+	.dashboard___search_bar {
+		@apply relative;
+	}
+	.dashboard___search_bar::after {
+		content: "";
+		position: absolute;
+		background: var(--text-grey-2);
+		height: 2px;
+		width: 50%;
+		left: 50%;
+	}
+	.weather__updates {
+		@apply text-[var(--primary-color-light)];
+	}
+	.fa-sun {
+		@apply text-yellow-500;
+	}
+	.header .right {
+		transition: all 0.5s linear;
+	}
+	.header .right:hover {
+		color: #fff;
+	}
+	.weather__rain .fa-raindrops {
+		@apply text-blue-400;
+	}
+	.weather__updates,
+	.sun__time__info {
+		@apply rounded-xl bg-[var(--box-color)];
+	}
+	.weather__status::after {
+		content: "";
+		position: absolute;
+		height: 2px;
+		background: var(--primary-color-light);
+		width: 75%;
+		left: 15%;
+	}
+	.swiper-slide {
+		width: 20%;
+	}
+	.swiper-pagination {
+		bottom: 0 !important;
 	}
 }

@@ -1,7 +1,7 @@
 {
 	"name": "weather-mini",
 	"version": "1.0.0",
-	"main": "script.js",
+	"main": "controller.js",
 	"scripts": {
 		"build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
 	},
@@ -11,5 +11,8 @@
 	"description": "",
 	"devDependencies": {
 		"tailwindcss": "^3.4.17"
+	},
+	"dependencies": {
+		"swiper": "^11.2.2"
 	}
 }
