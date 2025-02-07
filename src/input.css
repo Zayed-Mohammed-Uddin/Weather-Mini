@@ -1,7 +1,7 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 :root {
 	--primary-color: #339af0;
 	--box-color: #2b4879;
@@ -13,7 +13,7 @@
 	--text-grey-3: #adb5bd;
 	--white-color: #fff;
 	--black-color: #000;
-	--primary-font-family: "Nunito Sans", sans-serif;
+	--primary-font-family: "Fira Code", serif;
 	--primary-font-weight: 600;
 	--primary-line-height: 1.3;
 	--primary-font-size: 2.4rem;
@@ -65,7 +65,7 @@
 		bottom: 10%;
 	}
 	.weather__updates {
-		@apply text-[var(--primary-color-light)];
+		@apply text-[var(--primary-color-light)] flex items-center justify-center flex-col;
 	}
 	.fa-sun {
 		@apply text-yellow-500;
@@ -90,9 +90,6 @@
 		background: var(--text-grey-1);
 		width: 90%;
 		left: 5%;
-	}
-	.swiper-slide {
-		width: 20%;
 	}
 	.swiper-pagination {
 		bottom: 0 !important;
