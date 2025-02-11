@@ -5,12 +5,32 @@ export default class View {
 	_clear() {
 		this._parentEl.innerHTML = "";
 	}
-	_update() {}
 	_render(data) {
 		if (JSON.stringify(data) === "{}") return;
 		this._data = data;
 		this._clear();
+		this._isLoaded = true;
 		this._parentEl.insertAdjacentHTML("afterbegin", this._generateMarkUp());
 	}
-	_renderError() {}
+	_renderError(message = null) {
+		const markup = message
+			? `
+			<p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+				${message}
+			</p>`
+			: `<p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+				${this._errorMessage}
+			</p>`;
+		this._clear();
+		this._parentEl.insertAdjacentHTML("afterbegin", markup);
+	}
+	_renderSpinner() {
+		const markup = `<div id="spinner" class="spinner"></div>`;
+		this._clear();
+		this._parentEl.insertAdjacentHTML("afterbegin", markup);
+		const spinner = document.querySelector("#spinner");
+		setTimeout(() => {
+			if (spinner && this._isLoaded) spinner.remove();
+		}, 800);
+	}
 }

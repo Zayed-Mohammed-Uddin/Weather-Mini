@@ -1,3 +1,4 @@
+"use strict";
 import * as config from "../config.js";
 
 class SearchView {
@@ -6,18 +7,22 @@ class SearchView {
 		const url = new URL(window.location);
 		return url.searchParams.get("search");
 	}
+	_setQuery(query) {
+		const url = new URL(window.location);
+		url.searchParams.set("search", query);
+		window.history.pushState({}, "", url);
+	}
 	_addHandlerRender(handler) {
 		this._parentEl.addEventListener("click", function (e) {
-			const search_box = e.target.closest("#search");
-			const btn = document.querySelector("#btn_submit");
-			if (!search_box) {
-				return;
-			}
-			search_box.addEventListener("keydown", (e) => {
-				if (e.key === "Enter") {
-					handler();
-				}
-			});
+			e.preventDefault();
+			const btn_submit = e.target.closest("#btn_submit");
+			const search_box = document.querySelector("#search");
+			if (!btn_submit) return;
+
+			if (!search_box.value.trim()) return;
+			handler(search_box.value.trim());
+
+			search_box.value = "";
 		});
 	}
 }
