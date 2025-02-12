@@ -3,7 +3,6 @@ import {
 	AJAX,
 	WEATHER_API_KEY,
 	WEATHER_API_URL,
-	LOCATION_API_KEY,
 	LOCATION_API_URL,
 	list_icons,
 } from "./config.js";
