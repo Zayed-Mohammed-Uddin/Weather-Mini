@@ -26,7 +26,6 @@ const controlLoadGeoLocation = (async function () {
 	} catch (error) {
 		// rendering the spinner
 		ErrorModalView._renderSpinner();
-
 		ErrorModalView._renderError(error);
 		ErrorModalView._show();
 	}
@@ -39,8 +38,15 @@ const controlLoadLocation = (async function () {
 		await model.loadRequestedLocation(query);
 		// rendering the spinner
 		DashboardView._renderSpinner();
-		RenderModalView._render(model.state.requestedLocations);
-		RenderModalView._show();
+		if (model.state.requestedLocations.length > 0) {
+			RenderModalView._render(model.state.requestedLocations);
+			RenderModalView._show();
+		} else {
+			setTimeout(() => {
+				SearchView._resetUrl();
+			}, 2000);
+			throw new Error("Invalid request!");
+		}
 	} catch (error) {
 		// rendering the spinner
 		ErrorModalView._renderSpinner();
@@ -56,8 +62,15 @@ const controlSearchLocation = async function (query) {
 		await model.loadRequestedLocation(query);
 		// rendering the spinner
 		DashboardView._renderSpinner();
-		RenderModalView._render(model.state.requestedLocations);
-		RenderModalView._show();
+		if (model.state.requestedLocations.length > 0) {
+			RenderModalView._render(model.state.requestedLocations);
+			RenderModalView._show();
+		} else {
+			setTimeout(() => {
+				SearchView._resetUrl();
+			}, 2000);
+			throw new Error("Invalid request!");
+		}
 	} catch (error) {
 		// rendering the spinner
 		DashboardView._renderSpinner();

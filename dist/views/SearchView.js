@@ -12,6 +12,10 @@ class SearchView {
 		url.searchParams.set("search", query);
 		window.history.pushState({}, "", url);
 	}
+	_resetUrl(){
+		const url = new URL(window.location);
+		window.location.href = url.origin;
+	}
 	_addHandlerRender(handler) {
 		this._parentEl.addEventListener("click", function (e) {
 			e.preventDefault();

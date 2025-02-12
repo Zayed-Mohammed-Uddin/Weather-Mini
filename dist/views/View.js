@@ -1,6 +1,14 @@
 "use strict";
 
 export default class View {
+	/**
+	 * Render the received object to the DOM
+	 * @param {Object | Object[]} data The data to be rendered (e.g. weather)
+	 * @returns {undefined | string} A markup string is returned if render=false
+	 * @this {Object} View instance
+	 * @author Zayed Uddin
+	 * @todo Finish implementation
+	 */
 	_data;
 	_clear() {
 		this._parentEl.innerHTML = "";
