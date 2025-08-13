@@ -13,15 +13,11 @@ A modern, responsive weather application that provides real-time weather informa
 -   **Weather Conditions**: Detailed weather information including temperature, humidity, wind speed, and more
 -   **Error Handling**: Graceful error handling with user-friendly messages
 
-## 🚀 Demo
-
-![Weather-Mini Screenshot](./Image/cloud.png)
-
 ## 🛠️ Technologies Used
 
 -   **Frontend**: HTML5, CSS3, JavaScript (ES6+)
 -   **Styling**: Tailwind CSS
--   **Icons**: Font Awesome Pro 5
+-   **Icons**: Font Awesome 5
 -   **UI Components**: Flowbite
 -   **Carousel**: Swiper.js
 -   **Build Tools**: PostCSS, Autoprefixer
